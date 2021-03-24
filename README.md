@@ -1,5 +1,5 @@
 vvu-DataStructureAss
-
+# Author : Timothy Dzokoto.
 # The folder vvu-DataStructure contains folders of the following:
 - An algorithm on the singly linked list 
 - Doubly linked list
