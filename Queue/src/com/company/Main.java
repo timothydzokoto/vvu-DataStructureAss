@@ -1,21 +1,24 @@
 package com.company;
 
+
 import java.util.Scanner;
 
 
 /**
  * ////////////////////////////////////////////////////
  * ///////          Timothy Dzokoto             ///////
- * ///////          219IT01000029               ///////
+ * ///////                                      ///////
  * ///////                                      ///////
  * ////////////////////////////////////////////////////
  */
 
-public class Main {
+public class Main<T> {
 
     public static void main(String[] args) {
 	// write your code here
+        Scanner key = new Scanner(System.in);
         QueueLinkedList queue = new QueueLinkedList();
+
 
         queue.enqueue("A");
         queue.enqueue("B");
@@ -29,13 +32,22 @@ public class Main {
         queue.dequeue();
         queue.display();
 
+
         String ss;
         do{
             queue.dequeue();
             queue.display();
-            System.out.println("Press [D] to delete a node or [Q] to quit");
-            Scanner key = new Scanner(System.in);
+            System.out.println("Press [A] to add, [D] to delete a node or [Q] to quit");
+            Scanner k = new Scanner(System.in);
             ss = key.nextLine();
+            while(ss.equalsIgnoreCase("A")){
+                System.out.println("Enter what to enter :");
+                String str = k.nextLine();
+                queue.enqueue(str);
+                queue.display();
+                System.out.println("Press [A] to add, [D] to delete a node or [Q] to quit");
+                ss = key.nextLine();
+            }
         }while(ss.equalsIgnoreCase("D"));
     }
 }

@@ -12,7 +12,6 @@ public class Main {
         dll.insertAtLast("Agbo Dzokoto");
         dll.insertAtLast("Yaw Dzokoto");
         dll.insertAtLast("Timothy Dzokoto");
-        dll.insertAt("Mom", 3);
         dll.display();
         System.out.println("==============================");
         // dll.deleteAt(2);

@@ -64,6 +64,14 @@ public class StackLinkedList<T> {
 
     }
 
+    /**
+     * the getItems method return the number of list items
+     * @return the number of items in the stack.
+     */
+    public int getItems(){
+        return items;
+    }
+
     // the display method displays the item in the  list
     public void display()
     {
