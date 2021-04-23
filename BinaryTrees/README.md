@@ -1,9 +1,10 @@
+# Binary Tree ADT
+A binary tree is  a tree in which no node can have more than two children. The highest degree of any node is two. This indicates that the degree of a binary tree is either zero or one or two.
 
 
 
 
-
-## The following are the methods employed in this binary tree 
+## The following are the operations employed in this binary tree 
 - __getRoot__ : with returns the root node of the tree
 - __add__ : the add method which takes an argument and adds a new node to the list
 - __remove__ : the remove method deletes a specific node from the list depending on the argument passed to its parameters
@@ -39,3 +40,9 @@ subtree
     2. Perform postorder traversal of right subtree of root
     3.  Visit root node of tree
     
+## Applications of Binary Tree ADT
+
+- Binary Search Tree - Used in many search applications where data is constantly entering/leaving
+- Binary Space Partition - Used in almost every 3D video game to determine what objects need to be rendered.
+- Binary Tries - Used in almost every high-bandwidth router for storing router-tables.
+- Bianry Trees - Used in representation of an organogram of an institution
